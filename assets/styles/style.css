@@ -218,6 +218,14 @@ footer .menu li a{
 }
 .main-menu h1{
   margin-bottom: 25px;
+  position:relative;
+  right:70px;
+  bottom:20px;
+}
+.main-menu header .far{
+position:relative;
+bottom:20px;
+left:50px;
 }
 .entrees, .plats, .desserts{
   width: 50%;
