@@ -216,24 +216,16 @@ footer .menu li a{
     bottom: 150px;
     box-shadow: #ccc 8px 8px 8px;
 }
-.main-menu h1{
+.aside_title h1{
   margin-bottom: 25px;
   position:relative;
-  right:70px;
+  right:100px;
   bottom:20px;
-}
-.main-menu header .far{
-position:relative;
-bottom:20px;
-left:50px;
 }
 .entrees, .plats, .desserts{
   width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-.aside_title{
-  width:80%;
 }
 .aside_title .fa-heart{
   position: relative;
@@ -248,19 +240,18 @@ left:50px;
   color:grey;
 }
 .entrees h2, .plats h2, .desserts h2{
-    margin-bottom: 15px;
     border-bottom: 2px solid #99E2D0;
     width: 40px;
     float: left;
     position: relative;
     bottom: 30px;
-    right:150px;
+    right:180px;
 }
 .entrees ul, .plats ul, .desserts ul{
   padding-top:20px;
-  width:750px;
+  width:1000px;
   position:relative;
-  right:200px;
+  right:250px;
 }
 .entrees li, .plats li, .desserts li{
   list-style-type: none;
