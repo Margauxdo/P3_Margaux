@@ -54,6 +54,9 @@ header{
 img{
   width:100%;
 }
+.img-bandeau{
+  margin-top:50px;
+}
 .section-header h1{
   text-align: center;
   margin-top: 50px;
