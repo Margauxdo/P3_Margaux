@@ -189,8 +189,9 @@ aside h3{
 #section-main .fa-heart{
   position: relative;
   bottom: 15px;
-  left: 165px;
-}#section-main p{
+  left: 185px;
+}
+#section-main p{
   margin-top:8px;
 }
 #section-main .fa-heart:hover{
@@ -363,6 +364,9 @@ article strong :hover{
   #section-main figure img{
     width:100%;
   }
+  #section-main li figcaption{
+    margin: 10px 0px 0px 15px;
+  }
   #section-main li{
     width:90%;
     margin-top:15px;
@@ -384,7 +388,6 @@ article strong :hover{
     font-size: 19px;
   }
   #section-main .new{
-    left: 300px;
     width: 200px;
     font-weight: 900;
     font-size: 20px;
@@ -397,7 +400,7 @@ article strong :hover{
   }
   #section-main .fa-heart{
     bottom: 20px;
-    left: 740px;
+    left: 800px;
     font-size: 20px;
   }
   footer .menu li a{
