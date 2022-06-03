@@ -254,10 +254,13 @@ left:50px;
     float: left;
     position: relative;
     bottom: 30px;
+    right:150px;
 }
 .entrees ul, .plats ul, .desserts ul{
   padding-top:20px;
-  padding-left:0px;
+  width:750px;
+  position:relative;
+  right:200px;
 }
 .entrees li, .plats li, .desserts li{
   list-style-type: none;
