@@ -381,7 +381,9 @@ article strong :hover{
   #search p{
     font-size:23px;
   }
-  .container_ok{
+  .bloc_ok{
+    text-align: end;
+    position: relative;
     bottom: 67px;
     left: 27px;
   }
@@ -450,6 +452,15 @@ article strong :hover{
   }
   header{
    display:block;
+  }
+  article.description{
+    height: 65px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  p{
+    font-size: 15px;
   }
   .fa-map-marker{
     background: #f2f2f2;
@@ -522,12 +533,6 @@ article strong :hover{
   #section-main h4{
     font-size: 30px;
   }
-  .slide_in{
-    font-size: 3.7em;
-  }
-  .container_ok{
-    bottom:120px;
-  }
   #section-main p{
     font-size: 26px;
   }
@@ -563,5 +568,19 @@ article strong :hover{
   }
   #logo{
     width:80%;
+  }
+  .slide_in{
+    background-color: #99E2D0;
+    font-size: 2.5em;
+    border: 0;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0.6em 1em;
+    animation: slideMe .7s ease-in;
+  }
+  .bloc_ok{
+    text-align: end;
+    position: relative;
+    bottom: 115px;
+    right: 5px;
   }
 } 
