@@ -354,13 +354,6 @@ article strong :hover{
     margin:0 auto;
     max-width: 989px;
   }
-  .bloc_ok{
-    bottom: 68px;
-    left: 28px;
-  }
-  .slide_in{
-    font-size: 1.8em;
-  }
   #section-main ul{
     display: flex;
     flex-wrap: wrap;
