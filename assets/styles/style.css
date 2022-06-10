@@ -85,7 +85,7 @@ img{
   box-shadow: #ccc 8px 8px 8px;
 
 }
-.container_ok{
+.bloc_ok{
   text-align: end;
     position: relative;
     bottom: 65px;
@@ -348,11 +348,18 @@ article strong :hover{
 
 
 
-@media screen and (min-width : 768px) and (max-width:989px)
+@media screen and (min-width:768px) and (max-width:989px)
 {
   .container{
     margin:0 auto;
     max-width: 989px;
+  }
+  .bloc_ok{
+    bottom: 68px;
+    left: 28px;
+  }
+  .slide_in{
+    font-size: 1.8em;
   }
   #section-main ul{
     display: flex;
@@ -380,15 +387,6 @@ article strong :hover{
   }
   #search p{
     font-size:23px;
-  }
-  .bloc_ok{
-    text-align: end;
-    position: relative;
-    bottom: 67px;
-    left: 27px;
-  }
-  .slide_in{
-    padding: 0.29em 0.7em;
   }
   h3{
     font-size: 23px;
@@ -569,18 +567,5 @@ article strong :hover{
   #logo{
     width:80%;
   }
-  .slide_in{
-    background-color: #99E2D0;
-    font-size: 2.5em;
-    border: 0;
-    border-radius: 0px 15px 15px 0px;
-    padding: 0.6em 1em;
-    animation: slideMe .7s ease-in;
-  }
-  .bloc_ok{
-    text-align: end;
-    position: relative;
-    bottom: 115px;
-    right: 5px;
-  }
+
 } 
