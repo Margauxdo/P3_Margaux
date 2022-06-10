@@ -381,6 +381,13 @@ article strong :hover{
   #search p{
     font-size:23px;
   }
+  .container_ok{
+    bottom: 67px;
+    left: 27px;
+  }
+  .slide_in{
+    padding: 0.29em 0.7em;
+  }
   h3{
     font-size: 23px;
   }
@@ -433,6 +440,8 @@ article strong :hover{
     right: 60px;
   }
 }
+
+
 @media screen and (min-width:320px) and (max-width:767px)
 {
   .container{
@@ -512,6 +521,12 @@ article strong :hover{
   }
   #section-main h4{
     font-size: 30px;
+  }
+  .slide_in{
+    font-size: 3.7em;
+  }
+  .container_ok{
+    bottom:120px;
   }
   #section-main p{
     font-size: 26px;
