@@ -128,8 +128,8 @@ img{
 .container_ok{
   text-align: right;
   position: relative;
-  bottom: 4.2em;
-  left:1.8em;
+  bottom: 7.5em;
+  left:0.5em;
 }
 @keyframes slideMe {
   0%{
@@ -308,6 +308,24 @@ footer .menu li a{
   position: relative;
   bottom: 150px;
   box-shadow: #ccc 8px 8px 8px;
+  animation: slideYOu .9s ease-in-out;
+}
+@keyframes slideYOu {
+  0%{
+    transform:skewX(5deg) translateX(100px) ; 
+  }
+  60%{
+    transform: translateX(0px);
+  }
+  62%{
+    transform: skewX(0deg) translateX(2px);
+  }
+  75%{
+    transform: skewX(-3deg);
+  }
+  100%{
+    transform: skew(0deg);
+  }
 }
 .aside_title h1{
   margin-bottom: 25px;
@@ -409,6 +427,8 @@ article strong :hover{
 .button{
   text-align:center;
 }
+
+
 
 
 
