@@ -14,12 +14,13 @@ h2{
 }
 h3{
   font-size: 21px;
+  text-overflow: ellipsis;
 }
 p, a{
   font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
-
+  text-overflow: ellipsis;
 }
 .container{
   margin:0 auto;
@@ -83,21 +84,27 @@ img{
   background-image: linear-gradient(180deg, #fac5eb 0%, #FF79DA 100%);
   background-color: #FF79DA;
   box-shadow: #ccc 8px 8px 8px;
-
 }
 .bloc_ok{
-  text-align: end;
+    text-align: end;
     position: relative;
-    bottom: 65px;
-    left: 26px;
+    bottom: 67px;
+    font-size: 24px;
+    left: 27px;
 }
 .slide_in{
   background-color: #99E2D0;
     font-size: 1.7em;
     border: 0;
     border-radius: 0px 15px 15px 0px;
-    padding: 0.27em 0.7em;
+    padding: 0.65em 0.9em;
     animation: slideMe .7s ease-in;
+}
+.container_ok{
+  text-align: right;
+  position: relative;
+  bottom: 4.2em;
+  left:1.7em;
 }
 @keyframes slideMe {
   0%{
@@ -135,6 +142,7 @@ img{
 aside h3{
   margin-left: 30px;
     margin-bottom: 30px;
+    text-overflow: ellipsis;
 }
 #container-etape li{
   background: #f2f2f2;
@@ -306,7 +314,6 @@ article .description{
 }
 .fa-check-circle{
   color:#f2f2f2;
-  margin-top: 20px;
 }
 .fa-check-circle:hover{
   float: right;
