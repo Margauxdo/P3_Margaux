@@ -97,13 +97,13 @@ img{
     font-size: 1.7em;
     border: 0;
     border-radius: 0px 15px 15px 0px;
-    padding: 0.65em 0.9em;
+    padding: 0.60em 0.9em;
     animation: slideMe .7s ease-in;
 }
 .container_ok{
   text-align: right;
   position: relative;
-  bottom: 4.2em;
+  bottom: 4em;
   left:1.7em;
 }
 @keyframes slideMe {
@@ -439,6 +439,15 @@ article strong :hover{
     position: relative;
     right: 60px;
   }
+  .slide_in{
+    padding: 0.7em 0.9em;
+  }
+  .container_ok{
+    text-align: right;
+    position: relative;
+    bottom: 4.2em;
+    left: 1.7em;
+  }
 }
 
 
@@ -566,6 +575,15 @@ article strong :hover{
   }
   #logo{
     width:80%;
+  }
+  .slide_in{
+    padding: 1.5em 1.6em;
+  }
+  .container_ok{
+    text-align: right;
+    position: relative;
+    bottom: 7em;
+    left: 1.7em;
   }
 
 } 
