@@ -285,20 +285,16 @@ footer .menu li a{
 }
 .entrees h2, .plats h2, .desserts h2{
     border-bottom: 2px solid #99E2D0;
-    width: 40px;
     float: left;
-    position: relative;
-    bottom: 30px;
-    right:180px;
+    margin-left: 50px;
 }
 .entrees ul, .plats ul, .desserts ul{
-  padding-top:20px;
-  width:800px;
-  position:relative;
-  right:225px;
+  display: contents;
+  flex-direction: column;
 }
 .entrees li, .plats li, .desserts li{
   list-style-type: none;
+  width:90%;
 }
 article strong{
   float: right;
@@ -361,6 +357,9 @@ article strong :hover{
     margin:0 auto;
     max-width: 989px;
   }
+  .main-menu{
+    width:100%;
+  }
   #section-main ul{
     display: flex;
     flex-wrap: wrap;
@@ -417,7 +416,8 @@ article strong :hover{
     width:100%;
   }
   .entrees, .plats, .desserts{
-    width:80%;
+    width: 100%;
+    text-size-adjust: none;
   }
   .main-menu a{
     padding: 10px
@@ -435,9 +435,7 @@ article strong :hover{
   }
   .entrees ul, .plats ul, .desserts ul{
     padding-top: 20px;
-    width: 700px;
-    position: relative;
-    right: 60px;
+    width: 100%;
   }
   .slide_in{
     padding: 0.7em 0.9em;
@@ -463,7 +461,8 @@ article strong :hover{
     left:25px;
   }
   header{
-   display:block;
+   display:flex;
+   flex-direction: column;
   }
   .fa-map-marker{
     background: #f2f2f2;
@@ -478,6 +477,7 @@ article strong :hover{
     border-radius: 0px;
     box-shadow: 0px 0px 0px;
     padding: 25px 0px;
+    width:100%;
   }
   .section-header{
     background: #f2f2f2a6;
