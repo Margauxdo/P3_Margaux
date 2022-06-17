@@ -94,17 +94,17 @@ img{
 }
 .slide_in{
   background-color: #99E2D0;
-    font-size: 1.7em;
+    font-size: 1.8em;
     border: 0;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0em 0.7em 0.7em 0em;
     padding: 0.60em 0.9em;
     animation: slideMe .7s ease-in;
 }
 .container_ok{
   text-align: right;
   position: relative;
-  bottom: 4em;
-  left:1.7em;
+  bottom: 4.2em;
+  left:1.8em;
 }
 @keyframes slideMe {
   0%{
@@ -149,7 +149,7 @@ aside h3{
     width: 30%;
     text-align: center;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 1em;
     color: grey;
 }
 #container-etape li:hover{
@@ -232,6 +232,8 @@ aside h3{
 }
 footer{
   background-color: #000;
+  position: relative;
+  bottom: 150px;
 }
 footer .menu ul{
   display: flex;
@@ -251,13 +253,13 @@ footer .menu li a{
   flex-direction: column;
 }
 .main-menu{
-  width: 80%;
+  width: 100%;
   background: #f2f2f2;
   padding:25px 0px 100px 0px;
-  border-radius: 25px;
-    position: relative;
-    bottom: 150px;
-    box-shadow: #ccc 8px 8px 8px;
+  border-radius: 3em 3em 0em 0em;
+  position: relative;
+  bottom: 150px;
+  box-shadow: #ccc 8px 8px 8px;
 }
 .aside_title h1{
   margin-bottom: 25px;
@@ -266,7 +268,7 @@ footer .menu li a{
   bottom:20px;
 }
 .entrees, .plats, .desserts{
-  width: 50%;
+  width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -287,6 +289,17 @@ footer .menu li a{
     border-bottom: 2px solid #99E2D0;
     float: left;
     margin-left: 50px;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+}
+.entree1, .plat1{
+  position: relative;
+  right: 50px;
+}
+.dessert1{
+  position: relative;
+  right:70px;
 }
 .entrees ul, .plats ul, .desserts ul{
   display: contents;
@@ -304,7 +317,7 @@ article strong{
 }
 article .description{
   border: 1px solid #ccc;
-  border-radius: 18px;
+  border-radius: 1em;
   padding: 10px;
   box-shadow: #ccc 5px 5px 5px;
 }
@@ -331,8 +344,8 @@ article strong :hover{
     text-align: center;
     color: #fff;
     background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 15px;
-    padding: 10px 50px;
+    border-radius: 2em;
+    padding: 15px 50px;
     width: 50%;
     font-weight: 500;
     font-size: 20px;
@@ -357,95 +370,7 @@ article strong :hover{
     margin:0 auto;
     max-width: 989px;
   }
-  .main-menu{
-    width:100%;
-  }
-  #section-main ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
-  #section-main figure img{
-    width:100%;
-  }
-  #section-main li figcaption{
-    margin: 10px 0px 0px 15px;
-  }
-  #section-main li{
-    width:90%;
-    margin-top:15px;
-    margin-bottom:15px;
-  }
-  .section-header h1{
-    font-size: 35px;
-  }
-  .section-header h2{
-    font-size: 25px;
-  }
-  #search p{
-    font-size:23px;
-  }
-  h3{
-    font-size: 23px;
-  }
-  #container-etape ul li a{
-    font-size: 19px;
-  }
-  #section-main .new{
-    width: 200px;
-    font-weight: 900;
-    font-size: 20px;
-  }
-  #section-main h4{ 
-    font-size: 25px;
-  }
-  #section-main p{
-    font-size: 22px;
-  }
-  #section-main .fa-heart{
-    bottom: 20px;
-    left: 800px;
-    font-size: 20px;
-  }
-  footer .menu li a{
-    font-size: 20px;
-  }
-  .aside_title{
-    width:100%;
-  }
-  .entrees, .plats, .desserts{
-    width: 100%;
-    text-size-adjust: none;
-  }
-  .main-menu a{
-    padding: 10px
-  }
-  .main-menu h1{
-    font-size: 35px;
-  }
-  .main-menu h2{
-    font-size: 28px;
-    position: relative;
-    left: 0px;
-  }
-  footer .menu li a {
-    padding: 10px;
-  }
-  .entrees ul, .plats ul, .desserts ul{
-    padding-top: 20px;
-    width: 100%;
-  }
-  .slide_in{
-    padding: 0.7em 0.9em;
-  }
-  .container_ok{
-    text-align: right;
-    position: relative;
-    bottom: 4.2em;
-    left: 1.7em;
-  }
+  
 }
 
 
@@ -455,135 +380,5 @@ article strong :hover{
     margin:0 auto;
     max-width: 767px;
   }
-  li{
-    width:450px;
-    position: relative;
-    left:25px;
-  }
-  header{
-   display:flex;
-   flex-direction: column;
-  }
-  .fa-map-marker{
-    background: #f2f2f2;
-    font-size: 30px;
-    margin-left: 30%;
-  }
-  .localisation{
-    font-size: 25px;
-    font-weight: 800;
-  }
-  #localisation{
-    border-radius: 0px;
-    box-shadow: 0px 0px 0px;
-    padding: 25px 0px;
-    width:100%;
-  }
-  .section-header{
-    background: #f2f2f2a6;
-    padding-top: 25px;
-    padding-bottom: 5px
-  }
-  #search p{
-    font-size: 28px;
-    padding: 20px 0px;
-  }
-  aside h3, #section-main h3{
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  #container-etape ul{
-    display: flex;
-    flex-direction: column;
-  }
-  #container-etape ul li{
-    width: 90%;
-    padding: 30px 0px;
-    margin: 50px 10px
-  }
-  .fa-mobile-alt{
-    margin-left: 50px;
-    font-size: 30px;
-  }
-  #container-etape ul li a{
-    font-size: 27px;
-    color: black;
-  }
-  #section-main{
-    background-color: #f2f2f2a6;;
-  }
-  #section-main ul{
-    background: #f2f2f2a6;
-    box-shadow: 0px 0px 0px;
-    border: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
-  #section-main ul li{
-    width:100%;
-  }
-  #section-main .new{
-    font-size: 27px;
-    left: 350px;
-  }
-  #section-main .fa-heart{
-    font-size: 30px;
-    left: 800px;
-  }
-  #section-main h4{
-    font-size: 30px;
-  }
-  #section-main p{
-    font-size: 26px;
-  }
-  footer .menu ul{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  footer .menu li{
-    width: 100%;
-    text-align: left;
-    margin-left: 35px;
-    font-size: 30px;
-  }
-  footer .menu li a{
-    font-size: 28px;
-    margin-left: 10px;
-  }
-.entrees article, .plats article, .desserts article{
-    width: 100%;
-    background: white;
-    border-radius: 18px;
-  }
-  .entrees, .plats, .desserts{
-    width:90%;
-  }
-  .main-menu header{
-    width: 100%;
-    margin: 50px 15px;
-  }
-  footer img{
-    width:80%;
-  }
-  #logo{
-    width:80%;
-  }
-  .slide_in{
-    padding: 0.5em 1.1em;
-  }
-  .container_ok{
-    position: relative;
-    bottom:3.7em;
-  }
-  .description p{
-    font-size: 13px;
-  }
-  .description h3{
-    font-size: 18px;
-
-} 
+  
 }
