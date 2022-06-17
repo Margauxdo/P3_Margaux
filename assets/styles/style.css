@@ -457,17 +457,13 @@ article strong :hover{
     margin:0 auto;
     max-width: 767px;
   }
+  li{
+    width:450px;
+    position: relative;
+    left:25px;
+  }
   header{
    display:block;
-  }
-  article.description{
-    height: 65px;
-  }
-  h3{
-    font-size: 18px;
-  }
-  p{
-    font-size: 15px;
   }
   .fa-map-marker{
     background: #f2f2f2;
@@ -577,13 +573,17 @@ article strong :hover{
     width:80%;
   }
   .slide_in{
-    padding: 1.5em 1.6em;
+    padding: 0.5em 1.1em;
   }
   .container_ok{
-    text-align: right;
     position: relative;
-    bottom: 7em;
-    left: 1.7em;
+    bottom:3.7em;
   }
+  .description p{
+    font-size: 13px;
+  }
+  .description h3{
+    font-size: 18px;
 
 } 
+}
