@@ -94,7 +94,6 @@ img{
     font-style: normal;
     font-weight: 500;
 }
-}
 #search p{
   text-align: center;
   color: #fff;
@@ -513,5 +512,100 @@ article strong :hover{
     margin:0 auto;
     max-width: 767px;
   }
-  
+  #localisation{
+    padding:25px 0px;
+    -webkit-box-shadow: 0 -8px 10px -6px #000000;
+	-moz-box-shadow: 0 -8px 10px -6px #000000;
+	box-shadow: 0 -8px 10px -6px #000000; 
+  }
+  .localisation{
+    font-size: 30px;
+    margin-left: 80px;
+    font-weight: 700;
+    color: black;
+  }
+  .section-header h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-top:100px;
+  }
+  .section-header h2{
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
+}
+  #search p{
+    width: 50%;
+    font-size: 35px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  #container-etape ol{
+    flex-direction: column;
+    align-items: center;
+  }
+  #container-etape ol li{
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 5px 5px 5px #ccc;
+    font-size: 30px;
+  }
+  #container-etape ol li a{
+    font-size: 30px;
+  }
+  #container-etape .fas{
+    margin-left: 20px;
+  }
+  main aside{
+    margin-top:70px;
+  }
+  #section-main{
+    background-color: #f2f2f2;
+    padding-top: 70px;
+    padding-bottom: 25px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+    margin:0px 0px;
+  }
+  #section-main ul{
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    align-content: space-around;
+    margin-left: 45px;
+    border-radius: 2em;
+  }
+  #section-main figure img{
+    height:400px;
+  }
+  #section-main li figcaption{
+    height:100px;
+  }
+  #section-main h4{
+    font-size: 35px;
+  }
+  #section-main p{
+    font-size:30px;
+  }
+  #section-main .new{
+    font-size: 35px;
+    padding: 15px;
+    color: #5b8e81;
+  }
+  #section-main .fa-heart {
+    position: relative;
+    bottom: 75px;
+    left: 805px;
+    font-size: 40px;
+}
+footer .menu ul{
+  flex-direction: column;
+}
+footer .menu li{
+  width:100%;
+}
+footer .menu li a{
+  font-size: 30px;
+}
 }
