@@ -330,9 +330,7 @@ footer .menu li a{
 }
 .aside_title h1{
   margin-bottom: 25px;
-  position:relative;
-  right:100px;
-  bottom:20px;
+  font-family: 'Shrikhand';
 }
 .entrees, .plats, .desserts{
   width: 100%;
