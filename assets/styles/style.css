@@ -4,11 +4,14 @@
   font-variant: normal;
   font-style: normal;
 }
-p, a, li, ol{
+p, a, li, ol,h2,h3,h4,h5{
   font-family: 'Roboto Mono', monospace;
 }
-h1,h2,h3,h4{
+h1{
   font-family: 'Shrikhand', cursive;
+}
+#section-main article img{
+  width:100%;
 }
 @media screen and (min-width:990px) and (max-width:1400px)
 {
@@ -39,5 +42,167 @@ h1,h2,h3,h4{
     margin:0 auto;
     max-width: 767px;
   }
-  
+  header{
+    text-align: center;
+  }
+  #logo{
+    width:50%;
+    margin: 20px 0px 8px 0px;
+  }
+  #localisation{
+    background-color: #f0f0f0;
+    padding: 10px 0px;
+    box-shadow: inset #ccc 0px 3px 3px 0px;
+
+  }
+  #localisation .localisation{
+    border: 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    font-style: normal;
+    width: 130px;
+    background-color: #f0f0f0;
+  }
+  .section-header h2{
+    width: 80%;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: system-ui;
+    text-align: center;
+    margin-top:10px;
+  }
+  .section-header h3{
+    color: #6b6b6b;
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-family: auto;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+}
+#search p{
+  width: 55%;
+    text-align: center;
+    font-style: revert;
+    font-family: auto;
+    font-size: 0.9em;
+    color: white;
+    background-color: gradient #9356DC;
+    background-color: #4158D0;
+    background-image: linear-gradient(1deg, #9356DC 5%, #FF79DA );
+    padding: 10px 0px;
+    border-radius: 1.5em;
+    margin-top:20px;
+}
+#search p:hover
+{
+  box-shadow: #ccc 0px 5px 3px;
+  background-image: linear-gradient(176deg, #eebce0f0 20%, #e573c5f0 );
+}
+#search a {
+text-decoration: none;
+}
+.section-header{
+    background: #f7f7f7;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+main aside{
+  margin: 20px 0px;
+  width: 100%;
+}
+h4{
+  font-family: system-ui;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.3em;;
+}
+aside li{
+    background-color: #f7f7f7;
+    width: 90%;
+    padding: 20px;
+    border-radius: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 20px;
+    box-shadow: #ccc 1px 2px 5px;
+}
+aside li:hover{
+  background-color: #9856dc1f;
+}
+  #container-etape li i{
+    color: #888282;
+    float: left;
+  }
+  #container-etape li i:hover{
+    color:#9356DC
+  }
+  #container-etape li a{
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  #container-etape ol{
+    list-style: none;
+     counter-reset: li;
+     list-style-position: outside;
+  }
+  #container-etape li::before 
+  {
+    content: counter(li); 
+    counter-increment: li;
+    color: white;
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+    background-color: #9356DC;
+    border-radius: 2em;
+  }
+  #section-main{
+    background: #f2f2f2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #section-main article{
+    width: 90%;
+    align-content: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 1em;
+    margin-bottom: 20px;
+    box-shadow: #f2f2f2 0px 2px 5px;
+  }
+  #section-main article img{
+    border-radius: 1em 1em 0em 0em;
+    object-fit: cover;
+    height: 150px;
+  }
+  .new{
+    color: #548378;
+    width: 25%;
+    text-align: center;
+    background: #99E2D0;
+    font-family: 'Roboto Mono';
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 5px;
+    position: relative;
+    bottom: 15em;
+    left: 7em;
+    border-radius: 0.2em;
+  }
+  article .fa-heart{
+    color: #9356DC;
+    position: relative;
+    bottom: 2em;
+    left: 16em;
+    font-size: 1em;
+  }
+  article .fa-heart:hover{
+    background:#9356DC;
+}
 }
