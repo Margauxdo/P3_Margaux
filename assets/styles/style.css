@@ -263,4 +263,13 @@ footer li .contact, footer li .mention{
   font-weight: 500;
   font-size: 0.8em;
 }
+.header-menu img{
+  width:100%;
+}
+.main-menu h1{
+  float: left;
+  font-size: 1.6em;
+  font-family: 'Shrikhand';
+  padding-left: 10px;
+}
 }
