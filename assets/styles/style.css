@@ -19,6 +19,29 @@ h1{
     margin:0 auto;
     max-width: 1400px;
   }
+  .main-menu{
+    animation-duration: 10s;
+    animation-name:slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+  75% {
+    font-size: 110%;
+    margin-left: 25%;
+    width: 100%;
+  }
+  50%{
+    margin-left:5%;
+    width:100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
   
 }
 
@@ -32,8 +55,31 @@ h1{
     margin:0 auto;
     max-width: 989px;
   }
- 
+  .main-menu{
+    animation-duration: 10s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+  75% {
+    font-size: 110%;
+    margin-left: 25%;
+    width: 100%;
+  }
+  50%{
+    margin-left:5%;
+    width:100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  }
+ 
 
 
 @media screen and (min-width:320px) and (max-width:767px)
@@ -172,7 +218,12 @@ aside li:hover{
   #section-main{
     background: #f2f2f2;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+  }
+  #search p{
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 13px 0px;
   }
   #section-main article{
     width: 90%;
@@ -240,6 +291,8 @@ aside li:hover{
 footer{
   background-color: #363636;
   padding:20px 0px 40px 0px;
+  position: relative;
+  bottom: 35px;
 }
 footer ul{
   list-style: none;
@@ -281,11 +334,32 @@ footer li .contact, footer li .mention{
 }
 .main-menu{
   border-radius: 2.5em 2.5em 0em 0em;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   padding-top: 25px;
   position: relative;
   bottom: 2.3em;
   background-color: #f4f4f4;
+  animation-duration: 10s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+  75% {
+    font-size: 110%;
+    margin-left: 25%;
+    width: 100%;
+  }
+  50%{
+    margin-left:5%;
+    width:100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .main-menu .fa-heart{
   font-size: 1.4em;
@@ -312,6 +386,7 @@ footer li .contact, footer li .mention{
 }
 .main-menu ul li{
     width: 100%;
+    height:60px;
     background-color: #fff;
     border-radius: 1em;
     box-shadow: #e6e6e6 0px 3px 5px;
@@ -340,5 +415,24 @@ footer li .contact, footer li .mention{
   text-decoration: none;
   color: white;
   font-weight: 100;
-}
+  }
+.slide_in{
+    visibility:hidden;
+  }
+  .main-menu .button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px 0px;
+  }
+  .demitrait_dessous{
+    width: 13%;
+    margin: 0px;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+  }
+  .demitrait_dessous hr{
+    background: #99E2D0;
+    height: 1px;
+    border: 0px;
+  }
 }
