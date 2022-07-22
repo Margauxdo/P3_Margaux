@@ -13,71 +13,13 @@ h1{
 #section-main article img{
   width:100%;
 }
+
 @media screen and (min-width:990px) and (max-width:1400px)
 {
   .container{
     margin:0 auto;
     max-width: 1400px;
   }
-  .entrees li, .plats li, .desserts li{
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  @keyframes slidein {
-    from {
-      margin-top: 100%;
-      width: 100%;
-    }
-    50%{
-      margin-top:50%;
-      width:100%;
-    }
-    to {
-      margin-top: 0%;
-      width: 100%;
-    }
-  }
-  .loader{
-    border:10px solid #ccc;
-    width:100px;
-    height:100px;
-    border-radius: 50%;
-    z-index: 999;
-    text-indent: -9999em;
-    border-top:10px solid #99E2D0;
-    border-bottom:10px solid #99E2D0;
-    margin:auto;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    animation: spin 3s linear infinite;
-   }
-   .loader main, .loader header{
-    visibility: hidden;
-   }
-   @keyframes spin{
-    0%{
-      transform:rotate(0deg);
-    }
-    100%{
-      transform:rotate(360deg)
-    }
-   }
-   @-webkit-keyframes spin{
-    0%{
-      -webkit-transform:rotate(0deg);
-    }
-    100%{
-      -webkit-transform:rotate(360deg)
-    }
-    }
-    .loader:after{
-      content:'';
-      display:none;
-      visibility: hidden;
-   }
   
 }
 
@@ -91,24 +33,7 @@ h1{
     margin:0 auto;
     max-width: 989px;
   }
-  .entrees li, .plats li, .desserts li{
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  @keyframes slidein {
-    from {
-      margin-top: 100%;
-      width: 100%;
-    }
-    50%{
-      margin-top:50%;
-      width:100%;
-    }
-    to {
-      margin-top: 0%;
-      width: 100%;
-    }
-  }
+  
   }
  
 
