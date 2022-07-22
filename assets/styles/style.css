@@ -19,29 +19,24 @@ h1{
     margin:0 auto;
     max-width: 1400px;
   }
-  .main-menu{
-    animation-duration: 10s;
-    animation-name:slidein;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 150%;
+  .entrees li, .plats li, .desserts li{
+    animation-duration: 3s;
+    animation-name: slidein;
   }
-  75% {
-    font-size: 110%;
-    margin-left: 25%;
-    width: 100%;
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+    50%{
+      margin-top:50%;
+      width:100%;
+    }
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
   }
-  50%{
-    margin-left:5%;
-    width:100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
   
 }
 
@@ -55,29 +50,24 @@ h1{
     margin:0 auto;
     max-width: 989px;
   }
-  .main-menu{
-    animation-duration: 10s;
+  .entrees li, .plats li, .desserts li{
+    animation-duration: 3s;
     animation-name: slidein;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 150%;
   }
-  75% {
-    font-size: 110%;
-    margin-left: 25%;
-    width: 100%;
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+    50%{
+      margin-top:50%;
+      width:100%;
+    }
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
   }
-  50%{
-    margin-left:5%;
-    width:100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
   }
  
 
@@ -339,25 +329,22 @@ footer li .contact, footer li .mention{
   position: relative;
   bottom: 2.3em;
   background-color: #f4f4f4;
-  animation-duration: 10s;
+}
+.entrees li, .plats li, .desserts li{
+  animation-duration: 3s;
   animation-name: slidein;
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 150%;
-  }
-  75% {
-    font-size: 110%;
-    margin-left: 25%;
+    margin-top: 100%;
     width: 100%;
   }
   50%{
-    margin-left:5%;
+    margin-top:50%;
     width:100%;
   }
   to {
-    margin-left: 0%;
+    margin-top: 0%;
     width: 100%;
   }
 }
