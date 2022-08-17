@@ -541,6 +541,7 @@ font-size: 1.5em;
   }
   .main-menu ul li{
     font-size: 1.1em;
+    border-radius: 1.2em;
   }
   .main-menu li article p{
     font-size: 0.9em;
@@ -552,6 +553,12 @@ font-size: 1.5em;
   .heart-regular:active{
     visibility: hidden;
   }
+  .heart-regular{
+    right:1.5em;
+  }
+  .heart-solid{
+    left: 0.1em;
+  }
   .heart-solid:active{
     visibility: visible;
   }
@@ -562,15 +569,16 @@ font-size: 1.5em;
     z-index: 2;
   }
   .slide_in{
-    font-size: 1.24em;
-    bottom: 6.9em;
-    left: 27.4em;
+    font-size: 1.28em;
+    bottom: 6.79em;
+    left: 27.2em;
+    width: 3em;
   }
   .main-menu .price{
     left: 16.5em;
     bottom: 3.3em;
     width: 5em;
-    font-size: 1.02em;
+    font-size: 1.03em;
     margin-bottom: 1em
   }
  }
