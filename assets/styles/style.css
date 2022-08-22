@@ -411,8 +411,8 @@ top:0;
 bottom:0;
 left:0;
 right:0;
-animation:spin 5s ease-in-out infinite forwards;
--webklit-animation:spin 5s ease-in-out infinite forwards;
+animation:spin 5s ease-in-out forwards;
+-webklit-animation:spin 5s ease-in-out forwards;
 }
 @keyframes spin{
 0%{
