@@ -653,12 +653,37 @@ font-size: 1.5em;
   display: flex;
   width: 100%;
 }
-.description h3, .description p{
+.description h3{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 200px;
   margin:0px;
+}
+.article_menu .description p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  margin:0px;
+}
+.main-menu h2 {
+  margin-top: 15px;
+}
+.slide_in:active{
+  right: 1.7em;
+    top: 33.6em;
+}
+.slide_in{
+  right:77em;
+}
+.heart .heart-regular{
+  left:9em;
+  top:1em;
+}
+.heart .heart-solid{
+  left: 10.6em;
+    top: 1em;
 }
   }
   
