@@ -273,6 +273,8 @@ padding-bottom:0.5em;
   background: #99E2D0;
     height: 0.2em;
     border: 0px;
+    width: 45%;
+    margin: 0;
 }
 .full{
 color:#9356DC;
@@ -392,7 +394,7 @@ font-size: 1.5em;
 .article_menu .description p{
   text-overflow: ellipsis;
   text-align: left;
-  width: 240px;
+  width: 85%;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -403,9 +405,9 @@ font-size: 1.5em;
     font-size: 1.5em;
 }
 .slide_in:active{
-  position: absolute;
-    top: 7.9em;
-    right:0.6em;
+    position: absolute;
+    top: 69%;
+    right: 1.2%
     border: 1px solid #99E2D0;
     height: 4.75em;
     border-radius: 0em 1em 1em 0em;
@@ -431,8 +433,8 @@ font-size: 1.5em;
 }
 .slide_in{
   position: absolute;
-    top: 35.55em;
-    right: 24em;
+  top: 69%;
+  right: 130%;
     border: 1px solid #99E2D0;
     height: 4.75em;
     border-radius: 0em 1em 1em 0em;
@@ -515,11 +517,11 @@ font-size: 1.5em;
     z-index: 2;
   }
   .slide_in:active{
-    top: 51em;
-    right: 0.6em;
+    top: 69.4%;
+    right: 1.1%;
 }
 .slide_in{
-  right: 58em;
+  right: 130%;
 }
 .article_menu .description p{
   width:440px;
@@ -657,25 +659,25 @@ font-size: 1.5em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 200px;
+  width: 82%;
   margin:0px;
 }
 .article_menu .description p{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 200px;
+  width: 82%;
   margin:0px;
 }
 .main-menu h2 {
   margin-top: 15px;
 }
 .slide_in:active{
-  right: 1.7em;
-    top: 33.6em;
+  right: 2.4%;
+  top: 72.5%;
 }
 .slide_in{
-  right:77em;
+  right:150%;
 }
 .heart .heart-regular{
   left:9em;
