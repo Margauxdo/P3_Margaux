@@ -350,32 +350,26 @@ font-size: 1.5em;
   z-index: 1;
 }
 .heart-solid{
+  z-index: 1;
+  position: relative;
+  left: 20.3em;
+  bottom: 2.5em;
   width: 1.6em;
-    float: right;
-    position: relative;
-    bottom: 2.5em;
-    left: 0.8em;
-    z-index: 1;
 }
 .heart-solid:active{
+  animation-duration: 1s;
+  animation-name: coeur;
   z-index: 2;
 }
-.heart .heart-regular{
-  bottom:0em;
-  position: relative;
-  z-index: 2;
-  background-color: #f4f4f4;
-}
-.heart .heart-regular:active{
-  z-index: 1;
-}
-.heart .heart-solid:active{
-  z-index: 2;
-}
-.heart .heart-solid{
-  top: 0em;
-    position: relative;
-    z-index: 1;
+@keyframes coeur{
+  from{
+    margin-bottom: 100%;
+    width:20%;
+  }
+  to{
+    margin-bottom: 0%;
+    width:0%;
+  }
 }
 .main-menu .article_menu{
   border: 1px solid #d6d6d6;
@@ -385,6 +379,28 @@ font-size: 1.5em;
     padding: 0.5em;
     height:4em;
     box-shadow: #ccc 2px 3px 2px;
+}
+.description {
+  animation-duration: 3s;
+  animation-name: defilement;
+}
+@keyframes defilement{
+  from{
+    margin-top:300%;
+    width:300%;
+  }
+  75%{
+    margin-top: 200%;
+    width:200%;
+  }
+  50%{
+    margin-top:100%;
+    width:100%;
+  }
+  to{
+    margin-top: 0%;
+    width:100%;
+  }
 }
 .article_menu .price{
   text-align: end;
@@ -497,24 +513,8 @@ font-size: 1.5em;
   #localisation .localisation{
     font-size: 1em;
   }
-
-  .heart-regular:active{
-    visibility: hidden;
-  }
-  .heart-regular{
-    left:5.4em;
-  }
   .heart-solid{
-    left: 7em;
-  }
-  .heart-solid:active{
-    visibility: visible;
-  }
-  .heart .heart-regular:active{
-    z-index: 1;
-  }
-  .heart .heart-solid:active{
-    z-index: 2;
+    left:39.55em;
   }
   .slide_in:active{
     top: 69.4%;
@@ -616,23 +616,37 @@ font-size: 1.5em;
     margin:20px;
     height:115px;
   }
-  .heart .heart-solid{
-    left:0em;
-  }
-  .heart .heart-regular{
-    right:1.6em;
-  }
   .heart-solid{
-    left:1.5em;
+    left: 24.8em;
   }
   .heart-regular{
-    right:0.1em;
-  }
-  .heart .heart-regular:hover{
-    z-index: 1;
-  }
-  .heart .heart-solid:hover{
+    right: 0.12em;
     z-index: 2;
+}
+.heart-regular:hover{
+  z-index: 1;
+}
+.heart-solid{
+  z-index: 1;
+  position: relative;
+  left: 24.8em;
+  bottom: 2.5em;
+  width: 1.6em;
+}
+.heart-solid:hover{
+  animation-duration: 1s;
+  animation-name: coeur;
+  z-index:2;
+}
+@keyframes coeur{
+  from{
+    margin-bottom: 100%;
+    width:20%;
+  }
+  to{
+    margin-bottom: 0%;
+    width:0%;
+  }
   }
   .main-menu{
     border-radius: 0em 0em 0em 0em;
