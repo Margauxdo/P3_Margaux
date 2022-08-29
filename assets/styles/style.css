@@ -14,6 +14,11 @@ h1{
   margin:0 auto;
   max-width: 767px;
 }
+header .heart{
+  position: relative;
+  top: 10px;
+  background-color: #f7f7f7;
+}
 header{
   text-align: center;
 }
@@ -342,7 +347,7 @@ font-size: 1.5em;
   position: relative;
   float: right;
   bottom: 2.5em;
-  right: 0.8em;
+  right:2%;
   background-color: white;
   z-index: 2;
 }
@@ -352,7 +357,7 @@ font-size: 1.5em;
 .heart-solid{
   z-index: 1;
   position: relative;
-  left: 20.3em;
+  left: 91%;
   bottom: 2.5em;
   width: 1.6em;
 }
@@ -514,7 +519,7 @@ font-size: 1.5em;
     font-size: 1em;
   }
   .heart-solid{
-    left:39.55em;
+    left:39.5em;
   }
   .slide_in:active{
     top: 69.4%;
