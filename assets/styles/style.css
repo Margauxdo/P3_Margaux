@@ -278,7 +278,7 @@ padding-bottom:0.5em;
   background: #99E2D0;
     height: 0.2em;
     border: 0px;
-    width: 45%;
+    width: 75%;
     margin: 0;
 }
 .full{
@@ -425,42 +425,41 @@ font-size: 1.5em;
     font-weight: 700;
     font-size: 1.5em;
 }
-.slide_in:active{
-    position: absolute;
-    top: 69%;
-    right: 1.2%
-    border: 1px solid #99E2D0;
-    height: 4.75em;
-    border-radius: 0em 1em 1em 0em;
-    width: 4em;
-    background-color: #99E2D0;
-    animation-duration: 3sec;
-    animation-name: encoche;
-    
+
+.slide_in, .container_ok{
+  z-index: 2;
+  position: relative;
+  right: 5em;
+  bottom:4em;
 }
-@keyframes encoche{
-  0%{
-    margin-right:100%;
-    width:300%;
+.slide_in:active
+{
+  border: 1px solid #99E2D0;
+  height: 4.75em;
+  border-radius: 0em 1em 1em 0em;
+  width: 4.5em;
+  background-color: #99E2D0;
+  position: relative;
+  bottom: 0.6em;
+  left: 32.8em;
+  z-index: 1;
+  animation-duration: 3s;
+  animation-name: slide;
+}
+@keyframes slide {
+  from{
+    margin-right: 100%;
+    width:100%
   }
-  50%{
-    margin-right:50%;
-    width:200%;
-  }
-  100%{
+  75%{
     margin-right: 100%;
     width:100%;
   }
-}
-.slide_in{
-  position: absolute;
-  top: 69%;
-  right: 130%;
-    border: 1px solid #99E2D0;
-    height: 4.75em;
-    border-radius: 0em 1em 1em 0em;
-    width: 4em;
-    background-color: #99E2D0;
+  to{
+    margin-right: 0%;
+    width:0%;
+
+  }
 }
 .button a{
   text-decoration: none;
@@ -521,13 +520,6 @@ font-size: 1.5em;
   .heart-solid{
     left:39.5em;
   }
-  .slide_in:active{
-    top: 69.4%;
-    right: 1.1%;
-}
-.slide_in{
-  right: 130%;
-}
 .article_menu .description p{
   width:440px;
 }
@@ -540,6 +532,15 @@ font-size: 1.5em;
 .demitrait_dessous hr{
   width: 55%;
     margin: 0;
+}
+.fa-check-circle{
+  color: white;
+    font-weight: 900;
+    font-size: x-large;
+}
+.slide_in:active{
+  bottom: 5.9em;
+  left: 52.5em;
 }
   }
 
@@ -691,13 +692,6 @@ font-size: 1.5em;
 .main-menu h2 {
   margin-top: 15px;
 }
-.slide_in:active{
-  right: 2.4%;
-  top: 72.5%;
-}
-.slide_in{
-  right:150%;
-}
 .heart .heart-regular{
   left:9em;
   top:1em;
@@ -705,6 +699,31 @@ font-size: 1.5em;
 .heart .heart-solid{
   left: 10.6em;
     top: 1em;
+}
+.fa-check-circle{
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+.slide_in{
+  z-index: 2;
+  position: relative;
+  right: 120em;
+  top: 2em;
+}
+.slide_in:hover{
+  top: 0.6em;
+  right: 5.2em;
+}
+.description h3:hover, .description p:hover{
+  text-overflow: initial;
+    width: 100%;
+}
+.article_menu:hover{
+  height:100%;
+}
+.price:hover{
+  bottom:0em;
 }
   }
   
