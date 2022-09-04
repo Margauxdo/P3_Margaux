@@ -429,6 +429,49 @@ font-size: 1.5em;
   margin-bottom:25px;
   display:flex;
 }
+.container_ok{
+  float: right;
+  position: relative;
+  bottom: 55px;
+  font-size: x-large;
+}
+.fa-check-circle{
+  color: white;
+    font-size: large;
+    font-weight: 600;
+}
+.slide_in{
+  z-index: 2;
+  position: relative;
+    right: 500px;
+}
+.slide_in:active{
+  z-index: 1;
+  background: #99E2D0;
+  border: 1px solid #99E2D0;
+  border-radius: 0% 25% 25% 0%;
+  font-size: 100%;
+  padding: 17px;
+  position: relative;
+  bottom: 14px;
+  left: 8px;
+  animation-name: slide;
+  animation-duration: 5s;
+}
+@keyframes slide {
+  from{
+    margin-left: 300%;
+  }
+  to{
+    margin-left: 0%;
+  }
+}
+.price{
+  z-index: 1;
+}
+.price:active{
+  z-index: 2;
+}
 
 
 
@@ -491,6 +534,9 @@ font-size: 1.5em;
   width: 55%;
     margin: 0;
 }
+  }
+  .slide_in{
+    right: 800px;
   }
 
 
@@ -652,6 +698,46 @@ font-size: 1.5em;
   left: 10.6em;
     top: 1em;
 }
+  }
+  .slide_in{
+    right: 900px;
+  }
+  .slide_in:hover{
+    z-index: 1;
+    background: #99E2D0;
+    border: 1px solid #99E2D0;
+    border-radius: 0% 25% 25% 0%;
+    font-size: 100%;
+    padding: 17px;
+    position: relative;
+    bottom: 14px;
+    left: 9px;
+    animation-name: slide;
+    animation-duration: 5s;
+  }
+  @keyframes slide {
+    from{
+      margin-left: 300%;
+    }
+    to{
+      margin-left: 0%;
+    }
+  }
+  .description h3:hover{
+    overflow: initial;
+    text-overflow: initial;
+    width: 100%;
+    margin: 0px;
+  }
+  .article_menu .description p:hover{
+    overflow: initial;
+    text-overflow: initial;
+    width: 90%;
+    margin: 0px;
+    height: 35px;
+  }
+  .main-menu .article_menu:hover{
+    height: 80px;
   }
   
 
