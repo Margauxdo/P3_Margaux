@@ -392,12 +392,14 @@ font-size: 1.5em;
 }
 .main-menu .article_menu{
   border: 1px solid #d6d6d6;
-    background-color: white;
-    border-radius: 1em;
-    margin: 0.5em;
-    padding: 0.5em;
-    height:4em;
-    box-shadow: #ccc 2px 3px 2px;
+  background-color: white;
+  border-radius: 1em;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 0.5em;
+  height: 4em;
+  box-shadow: #ccc 2px 3px 2px;
+  width: 95%;
 }
 .description {
   animation-duration: 3s;
@@ -688,13 +690,6 @@ font-size: 1.5em;
   width: 45%;
     margin: 0px;
 }
-.main-menu .article_menu{
-  width: 30%;
-}
-.main-menu .contenu{
-  display: flex;
-  width: 100%;
-}
 .description h3{
   white-space: nowrap;
   overflow: hidden;
@@ -722,7 +717,7 @@ font-size: 1.5em;
 }
   }
   .slide_in{
-    right: 900px;
+    right: 1400px;
   }
   .slide_in:hover{
     z-index: 2;
@@ -757,9 +752,6 @@ font-size: 1.5em;
     width: 90%;
     margin: 0px;
     height: 35px;
-  }
-  .main-menu .article_menu:hover{
-    height: 80px;
   }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
@@ -843,9 +835,12 @@ font-size: 1.5em;
     .demitrait_dessous hr{
       width:45%;
     }
-    .main-menu .contenu{
-      display: flex;
-      width: 100%;
+    .article_menu .description h3, .article_menu .description p{
+      font-size: 19px;
+    }
+    #search p, .main-menu .button{
+      width: 40%;
+      font-size: 1.2em;
     }
   }
   
