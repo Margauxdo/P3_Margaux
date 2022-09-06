@@ -250,6 +250,7 @@ font-size: 1.5em;
 font-family: 'Shrikhand';
 padding-left: 10px;
 padding-left: 15px;
+width:100%;
 }
 .main-menu{
 border-radius: 2.5em 2.5em 0em 0em;
@@ -472,6 +473,21 @@ font-size: 1.5em;
 .price:active{
   z-index: 2;
 }
+.button a{
+  color: white;
+  text-decoration: none;
+}
+.aside_title .coeur{
+  position: relative;
+  width: 13%;
+}
+.article_menu .description h3, .article_menu .description p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 82%;
+  margin: 0px;
+}
 
 
 
@@ -542,7 +558,7 @@ font-size: 1.5em;
 
   
 
- @media screen and (min-width:990px) and (max-width:1400px)
+ @media screen and (min-width:990px) and (max-width:1440px)
 {
   .container{
     margin:0 auto;
@@ -584,6 +600,9 @@ font-size: 1.5em;
   }
   #section-main article{
     margin:20px;
+  }
+  #section-main{
+    padding-top:0px;
   }
   .new{
     bottom: 14.5em;
