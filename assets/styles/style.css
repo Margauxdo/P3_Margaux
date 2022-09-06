@@ -12,7 +12,6 @@ h1{
 }
 .container{
   margin:0 auto;
-  max-width: 767px;
 }
 header .heart{
   position: relative;
@@ -310,6 +309,7 @@ justify-content: center;
 align-items: center;
 animation:spin 5s forwards ;
 -webklit-animation:spin 5s forwards;
+z-index: 1;
 }
 .spin{
   width:200px;
@@ -363,13 +363,13 @@ font-size: 1.5em;
   bottom: 40px;
   right: 3%;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 }
 .heart-regular:active{
-  z-index: 1;
+  z-index: 2;
 }
 .heart-solid{
-  z-index: 1;
+  z-index: 2;
   position: relative;
   left: 90%;
   bottom: 39px;
@@ -378,7 +378,7 @@ font-size: 1.5em;
 .heart-solid:active{
   animation-duration: 1s;
   animation-name: coeur;
-  z-index: 2;
+  z-index: 3;
 }
 @keyframes coeur{
   from{
@@ -442,12 +442,12 @@ font-size: 1.5em;
     font-weight: 600;
 }
 .slide_in{
-  z-index: 2;
+  z-index: 3;
   position: relative;
     right: 500px;
 }
 .slide_in:active{
-  z-index: 1;
+  z-index: 2;
   background: #99E2D0;
   border: 1px solid #99E2D0;
   border-radius: 0% 25% 25% 0%;
@@ -468,10 +468,10 @@ font-size: 1.5em;
   }
 }
 .price{
-  z-index: 1;
+  z-index: 2;
 }
 .price:active{
-  z-index: 2;
+  z-index: 3;
 }
 .button a{
   color: white;
@@ -498,7 +498,6 @@ font-size: 1.5em;
 {
   .container{
     margin:0 auto;
-    min-width: 768px;
   }
   #logo{
     width:30%;
@@ -536,6 +535,9 @@ font-size: 1.5em;
   #localisation .localisation{
     font-size: 1em;
   }
+  .heart-regular{
+    right:3.7%;
+  }
   .heart-solid{
     left: 93.4%;
     bottom: 40px;
@@ -558,11 +560,10 @@ font-size: 1.5em;
 
   
 
- @media screen and (min-width:990px) and (max-width:1440px)
+ @media screen and (min-width:990px) and (max-width:1025px)
 {
   .container{
     margin:0 auto;
-    min-width: 990px;
     background-color: #f4f4f4;
   }
   .loader{
@@ -637,20 +638,22 @@ font-size: 1.5em;
     height:115px;
   }
   .heart-solid{
-    left: 86%;
+    z-index: 2;
+    position: relative;
+    left: 87%;
     bottom: 40px;
     width: 25px;
   }
   .heart-regular{
     left: 0%;
     bottom: 40px;
-    z-index: 2;
+    z-index: 3;
 }
 .heart-regular:hover{
-  z-index: 1;
+  z-index: 2;
 }
 .heart-solid{
-  z-index: 1;
+  z-index: 2;
   position: relative;
   left: 9.7em;
   bottom: 2.5em;
@@ -659,7 +662,7 @@ font-size: 1.5em;
 .heart-solid:hover{
   animation-duration: 1s;
   animation-name: coeur;
-  z-index:2;
+  z-index:3;
 }
 @keyframes coeur{
   from{
@@ -722,7 +725,7 @@ font-size: 1.5em;
     right: 900px;
   }
   .slide_in:hover{
-    z-index: 1;
+    z-index: 2;
     background: #99E2D0;
     border: 1px solid #99E2D0;
     border-radius: 0% 25% 25% 0%;
@@ -757,6 +760,93 @@ font-size: 1.5em;
   }
   .main-menu .article_menu:hover{
     height: 80px;
+  }
+  @media screen and (min-width:1025px) and (max-width:1450px)
+  {
+    .container{
+      margin: auto;
+    }
+    #logo{
+      width: 25%;
+    }
+    #localisation{
+      padding: 30px 0px;
+    }
+    .fa-map-marker{
+      font-size: 20px;
+    }
+    #localisation .localisation{
+      border: 0px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1em;
+      font-style: normal;
+      width: 300px;
+    }
+    .section-header h2{
+      width: 100%;
+      font-size: 1.7em;
+    }
+    .section-header h3{
+      font-size: 1.3em;
+    }
+    #serach p{ 
+    font-size: 1.1em;
+    }
+    h4{
+      font: 1.3em;
+    }
+    #container-etape ol{
+      display: flex;
+    inline-size: -webkit-fill-available;
+    width: 90%;
+    }
+    #container-etape li i{
+      color: #888282;
+    float: left;
+    font-size: 1.4em;
+    }
+    #container-etape li a{
+      font-size: 1.1em;
+    }
+    .contain-art{
+      display: flex;
+    width: 95%;
+    margin: 50px;
+    }
+    #section-main article{
+      width: 100%;
+    margin: 20px;
+    }
+    .heart-regular{
+      right:1%;
+    }
+    footer ul{
+      display:flex;
+    }
+    footer li{
+      margin-top: 20px;
+      font-size: 20px;;
+    }
+    footer nav ul h1{
+      margin-bottom:45px;
+    }
+    .slide_in{
+      right:1600px;
+    }
+    .main-menu h1{
+      font-size: 2em;
+    }
+    .main-menu h2{
+      font-size: 1.7em;
+    }
+    .demitrait_dessous hr{
+      width:45%;
+    }
+    .main-menu .contenu{
+      display: flex;
+      width: 100%;
+    }
   }
   
 
