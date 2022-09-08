@@ -349,47 +349,6 @@ animation:spin 5s ease-in-out forwards;
   -webkit-transform:rotate(360deg)
 }
 }
-
-.fa-check-circle:active{
-font-size: 1.5em;
-  text-align: center;
-  position: relative;
-  top: 0.8em;
-}
-.heart-regular{
-  width: 25px;
-  position: relative;
-  float: right;
-  bottom: 40px;
-  right: 3%;
-  background-color: white;
-  z-index: 3;
-}
-.heart-regular:active{
-  z-index: 2;
-}
-.heart-solid{
-  z-index: 2;
-  position: relative;
-  left: 90%;
-  bottom: 39px;
-  width: 25px;
-}
-.heart-solid:active{
-  animation-duration: 1s;
-  animation-name: coeur;
-  z-index: 3;
-}
-@keyframes coeur{
-  from{
-    margin-bottom: 100%;
-    width:20%;
-  }
-  to{
-    margin-bottom: 0%;
-    width:0%;
-  }
-}
 .main-menu .article_menu{
   border: 1px solid #d6d6d6;
   background-color: white;
@@ -423,57 +382,9 @@ font-size: 1.5em;
     width:100%;
   }
 }
-.article_menu .price{
-  text-align: end;
-  position: relative;
-  bottom: 1em;
-}
 .main-menu .aside_title{
   margin-bottom:25px;
   display:flex;
-}
-.container_ok{
-  float: right;
-  position: relative;
-  bottom: 55px;
-  font-size: x-large;
-}
-.fa-check-circle{
-  color: white;
-    font-size: large;
-    font-weight: 600;
-}
-.slide_in{
-  z-index: 3;
-  position: relative;
-    right: 500px;
-}
-.slide_in:active{
-  z-index: 2;
-  background: #99E2D0;
-  border: 1px solid #99E2D0;
-  border-radius: 0% 25% 25% 0%;
-  font-size: 100%;
-  padding: 17px;
-  position: relative;
-  bottom: 14px;
-  left: 8px;
-  animation-name: slide;
-  animation-duration: 5s;
-}
-@keyframes slide {
-  from{
-    margin-left: 300%;
-  }
-  to{
-    margin-left: 0%;
-  }
-}
-.price{
-  z-index: 2;
-}
-.price:active{
-  z-index: 3;
 }
 .button a{
   color: white;
@@ -489,6 +400,44 @@ font-size: 1.5em;
   text-overflow: ellipsis;
   width: 82%;
   margin: 0px;
+}
+.heart-regular{
+  width:25px;
+}
+.heart-solid{
+  width: 25px;
+  position: relative;
+  left: -26px;
+  opacity: 0;
+}
+.heart-solid:active{
+  opacity:1;
+  animation-name: coeur;
+  animation-duration:1s;
+}
+@keyframes coeur {
+  from{
+    margin-top:3%;
+  }
+  to{
+      margin-top:0%;
+  }
+  
+}
+figcaption .bloc{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: baseline;
+}
+figcaption .bloc p{
+  width:100%;
+}
+.description .content{
+  display:flex;
+}
+.price p{
+  float:right;
 }
 
 
@@ -537,13 +486,6 @@ font-size: 1.5em;
   #localisation .localisation{
     font-size: 1em;
   }
-  .heart-regular{
-    right:3.7%;
-  }
-  .heart-solid{
-    left: 93.4%;
-    bottom: 40px;
-  }
 .main-menu h1{
   margin-left: 15px;
 }
@@ -554,9 +496,6 @@ font-size: 1.5em;
   width: 55%;
     margin: 0;
 }
-  }
-  .slide_in{
-    right: 800px;
   }
 
 
@@ -639,43 +578,6 @@ font-size: 1.5em;
     margin:20px;
     height:115px;
   }
-  .heart-solid{
-    z-index: 2;
-    position: relative;
-    left: 87%;
-    bottom: 40px;
-    width: 25px;
-  }
-  .heart-regular{
-    left: 0%;
-    bottom: 40px;
-    z-index: 3;
-}
-.heart-regular:hover{
-  z-index: 2;
-}
-.heart-solid{
-  z-index: 2;
-  position: relative;
-  left: 9.7em;
-  bottom: 2.5em;
-  width: 1.6em;
-}
-.heart-solid:hover{
-  animation-duration: 1s;
-  animation-name: coeur;
-  z-index:3;
-}
-@keyframes coeur{
-  from{
-    margin-bottom: 100%;
-    width:20%;
-  }
-  to{
-    margin-bottom: 0%;
-    width:0%;
-  }
-  }
   .main-menu{
     border-radius: 0em 0em 0em 0em;
     width:90%;
@@ -707,38 +609,6 @@ font-size: 1.5em;
 .main-menu h2 {
   margin-top: 15px;
 }
-.heart .heart-regular{
-  left:9em;
-  top:1em;
-}
-.heart .heart-solid{
-  left: 10.6em;
-    top: 1em;
-}
-  }
-  .slide_in{
-    right: 1400px;
-  }
-  .slide_in:hover{
-    z-index: 2;
-    background: #99E2D0;
-    border: 1px solid #99E2D0;
-    border-radius: 0% 25% 25% 0%;
-    font-size: 100%;
-    padding: 17px;
-    position: relative;
-    bottom: 14px;
-    left: 9px;
-    animation-name: slide;
-    animation-duration: 5s;
-  }
-  @keyframes slide {
-    from{
-      margin-left: 300%;
-    }
-    to{
-      margin-left: 0%;
-    }
   }
   .description h3:hover{
     overflow: initial;
@@ -752,6 +622,19 @@ font-size: 1.5em;
     width: 90%;
     margin: 0px;
     height: 35px;
+  }
+  .heart-solid:hover{
+    opacity:1;
+    animation-name: coeur;
+    animation-duration:1s;
+  }
+  @keyframes coeur {
+    from{
+      margin-top:3%;
+    }
+    to{
+        margin-top:0%;
+    }
   }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
@@ -810,9 +693,6 @@ font-size: 1.5em;
       width: 100%;
     margin: 20px;
     }
-    .heart-regular{
-      right:1%;
-    }
     footer ul{
       display:flex;
     }
@@ -823,9 +703,7 @@ font-size: 1.5em;
     footer nav ul h1{
       margin-bottom:45px;
     }
-    .slide_in{
-      right:1600px;
-    }
+
     .main-menu h1{
       font-size: 2em;
     }
