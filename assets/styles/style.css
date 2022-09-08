@@ -433,11 +433,52 @@ figcaption .bloc{
 figcaption .bloc p{
   width:100%;
 }
-.description .content{
-  display:flex;
+.price{
+  float: right;
+  width: 40px;
+  height: 25px;
+  display: flex;
+  opacity: 1;
+  position: relative;
+  bottom: 20px;
 }
-.price p{
-  float:right;
+.price:active{
+  opacity:0;
+}
+.container_ok{
+  float: right;
+    width: 3.5%;
+    position: relative;
+    bottom: 50px;
+    opacity:0;
+}
+.container_ok:active{
+  opacity:1;
+  animation-name: slide;
+  animation-duration: 3s;
+}
+@keyframes slide {
+  0%{
+    margin-left: 100%;
+  }
+  50%{
+    margin-left: 50%;
+
+  }
+  100%{
+    margin-left: 0%;
+  }
+}
+.slide_in{
+  width: 52px;
+  height: 63px;
+  border-radius: 0px 15px 15px 0px;
+  color: white;
+  border: 0px solid;
+  background: #99E2D0;
+}
+.fa-check-circle{
+  font-size: 20px;
 }
 
 
@@ -496,6 +537,9 @@ figcaption .bloc p{
   width: 55%;
     margin: 0;
 }
+  }
+  .container_ok{
+    width:1.8%;
   }
 
 
@@ -636,6 +680,29 @@ figcaption .bloc p{
         margin-top:0%;
     }
   }
+  .slide_in{
+    width:57px;
+  }
+  .price:hover{
+    opacity:0;
+  }
+  .container_ok:hover{
+    opacity:1;
+    animation-name: slide;
+    animation-duration: 3s;
+  }
+  @keyframes slide {
+    0%{
+      margin-left: 100%;
+    }
+    50%{
+      margin-left: 50%;
+  
+    }
+    100%{
+      margin-left: 0%;
+    }
+  }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
     .container{
@@ -720,6 +787,12 @@ figcaption .bloc p{
       width: 40%;
       font-size: 1.2em;
     }
+  }
+  .container_ok{
+    bottom:55px;
+  }
+  .slide_in{
+    width:62px;
   }
   
 
