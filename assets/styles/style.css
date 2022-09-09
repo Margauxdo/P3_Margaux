@@ -495,7 +495,10 @@ figcaption .bloc p{
 }
 .fa-check-circle{
   font-size: 20px;
-  animation:rotation 4s ease-in forwards;
+}
+.fa-check-circle:active{
+  font-size: 20px;
+  animation:rotation 3s ease-in forwards;
 }
 @keyframes rotation {
   from {
@@ -507,9 +510,24 @@ to {
 }
 .container_ok{
   width: 50px;
-  position: absolute;
-  right: -50px;
-  top:133px;
+  position: relative;
+  right: -300px;
+  bottom: 50px;
+}
+.container_ok:active{
+  left:175px;
+ animation-duration: 2s;
+  animation-name: encoche;
+}
+@keyframes encoche {
+  from{
+margin: left -20px;
+width:0px
+  }
+ to{
+margin:left 0px;
+width:-200px;
+  }
 }
 
 
@@ -566,6 +584,13 @@ to {
   width: 55%;
     margin: 0;
 }
+.container_ok{
+  right:-500px;
+}
+.container_ok:active{
+  left:338px;
+}
+
   }
 
   
@@ -678,7 +703,6 @@ to {
 .main-menu h2 {
   margin-top: 15px;
 }
-  }
   .description h3:hover{
     overflow: initial;
     text-overflow: initial;
@@ -708,6 +732,24 @@ to {
   .slide_in{
     width:57px;
   }
+  .container_ok{
+    right:-600px;
+  }
+  .container_ok:hover{
+    left:405px;
+   animation-duration: 2s;
+    animation-name: encoche;
+  }
+  @keyframes encoche {
+    from{
+  margin: left -20px;
+  width:0px
+    }
+   to{
+  margin:left 0px;
+  width:-200px;
+    }
+}
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
     .container{
@@ -792,9 +834,26 @@ to {
       width: 40%;
       font-size: 1.2em;
     }
-  }
   .slide_in{
     width:62px;
+  }
+  .container_ok{
+    right:-800px;
+  }
+  .container_ok:hover{
+    left:650px;
+   animation-duration: 2s;
+    animation-name: encoche;
+  }
+  @keyframes encoche {
+    from{
+  margin: left -20px;
+  width:0px
+    }
+   to{
+  margin:left 0px;
+  width:-200px;
+    }
   }
 
   
