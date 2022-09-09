@@ -491,10 +491,11 @@ figcaption .bloc p{
 }
 .container_ok{
   float: right;
-    right: -48px;
+  width: 50px;
+  left: 36px;
     position: relative;
-    top: -50px;
-    opacity: 0;
+    bottom: 50px;
+    opacity:0;
 }
 .container_ok:active{
   opacity:1;
@@ -581,7 +582,6 @@ figcaption .bloc p{
     margin: 0;
 }
   }
-
 
   
 
@@ -828,15 +828,11 @@ figcaption .bloc p{
       font-size: 1.2em;
     }
   }
-
   .slide_in{
     width:62px;
   }
   .container_ok{
-    float: right;
-    right: -49px;
-    position: relative;
-    top: -55px;
+    bottom:55px;
   }
   
 
