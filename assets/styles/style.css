@@ -491,10 +491,10 @@ figcaption .bloc p{
 }
 .container_ok{
   float: right;
-    width: 3.5%;
+    right: -48px;
     position: relative;
-    bottom: 50px;
-    opacity:0;
+    top: -50px;
+    opacity: 0;
 }
 .container_ok:active{
   opacity:1;
@@ -524,7 +524,6 @@ figcaption .bloc p{
 .fa-check-circle{
   font-size: 20px;
 }
-
 
 
 
@@ -581,9 +580,6 @@ figcaption .bloc p{
   width: 55%;
     margin: 0;
 }
-  }
-  .container_ok{
-    width:1.8%;
   }
 
 
@@ -832,11 +828,15 @@ figcaption .bloc p{
       font-size: 1.2em;
     }
   }
-  .container_ok{
-    bottom:55px;
-  }
+
   .slide_in{
     width:62px;
+  }
+  .container_ok{
+    float: right;
+    right: -49px;
+    position: relative;
+    top: -55px;
   }
   
 
