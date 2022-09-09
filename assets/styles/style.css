@@ -482,37 +482,8 @@ figcaption .bloc p{
   width: 40px;
   height: 25px;
   display: flex;
-  opacity: 1;
   position: relative;
   bottom: 20px;
-}
-.price:active{
-  opacity:0;
-}
-.container_ok{
-  float: right;
-  width: 50px;
-  left: 36px;
-    position: relative;
-    bottom: 50px;
-    opacity:0;
-}
-.container_ok:active{
-  opacity:1;
-  animation-name: slide;
-  animation-duration: 3s;
-}
-@keyframes slide {
-  0%{
-    margin-left: 100%;
-  }
-  50%{
-    margin-left: 50%;
-
-  }
-  100%{
-    margin-left: 0%;
-  }
 }
 .slide_in{
   width: 52px;
@@ -524,8 +495,22 @@ figcaption .bloc p{
 }
 .fa-check-circle{
   font-size: 20px;
+  animation:rotation 4s ease-in forwards;
 }
-
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
+.container_ok{
+  width: 50px;
+  position: absolute;
+  right: -50px;
+  top:133px;
+}
 
 
 
@@ -723,26 +708,6 @@ figcaption .bloc p{
   .slide_in{
     width:57px;
   }
-  .price:hover{
-    opacity:0;
-  }
-  .container_ok:hover{
-    opacity:1;
-    animation-name: slide;
-    animation-duration: 3s;
-  }
-  @keyframes slide {
-    0%{
-      margin-left: 100%;
-    }
-    50%{
-      margin-left: 50%;
-  
-    }
-    100%{
-      margin-left: 0%;
-    }
-  }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
     .container{
@@ -831,9 +796,7 @@ figcaption .bloc p{
   .slide_in{
     width:62px;
   }
-  .container_ok{
-    bottom:55px;
-  }
+
   
 
 
