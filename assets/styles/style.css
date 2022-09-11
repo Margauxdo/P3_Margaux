@@ -349,17 +349,6 @@ animation:spin 5s ease-in-out forwards;
   -webkit-transform:rotate(360deg)
 }
 }
-.main-menu .article_menu{
-  border: 1px solid #d6d6d6;
-  background-color: white;
-  border-radius: 1em;
-  margin-right: auto;
-  margin-bottom: 15px;
-  padding: 0.5em;
-  height: 4em;
-  box-shadow: #ccc 2px 3px 2px;
-  width: 95%;
-}
 .entrees .description {
   animation-duration: 3s;
   animation-name: defilement;
@@ -438,13 +427,6 @@ animation:spin 5s ease-in-out forwards;
   position: relative;
   width: 13%;
 }
-.article_menu .description h3, .article_menu .description p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 82%;
-  margin: 0px;
-}
 .heart-regular{
   width:25px;
 }
@@ -486,9 +468,9 @@ figcaption .bloc p{
   bottom: 20px;
 }
 .slide_in{
-  width: 52px;
-  height: 63px;
-  border-radius: 0px 15px 15px 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
   color: white;
   border: 0px solid;
   background: #99E2D0;
@@ -508,26 +490,50 @@ to {
     transform: rotate(359deg);
 }
 }
-.container_ok{
-  width: 50px;
-  position: relative;
-  right: -300px;
-  bottom: 50px;
-}
 .container_ok:active{
-  left:175px;
- animation-duration: 2s;
   animation-name: encoche;
+  right:9px;
 }
 @keyframes encoche {
   from{
-margin: left -20px;
-width:0px
+margin: left 300%;
+width:100px;
   }
  to{
-margin:left 0px;
-width:-200px;
+margin:left 0%;
+width:0px;
   }
+}
+.description{
+  background-color: white;
+    border: 1px solid #ccc;
+    width: 95%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #ccc 4px 4px 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.description .content h3, .description .content p{
+  width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container_ok{
+  right: -60px;
+  position: absolute;
+}
+.price p strong{
+  top: 35px;
+    left: 42px;
+    position: absolute;
+}
+.description .content{
+  margin:0;
 }
 
 
@@ -584,13 +590,15 @@ width:-200px;
   width: 55%;
     margin: 0;
 }
-.container_ok{
-  right:-500px;
+.description .content h3, .description .content p{
+  width:600px;
+}
+.price p strong{
+  left:50px;
 }
 .container_ok:active{
-  left:338px;
+  right:20px;
 }
-
   }
 
   
@@ -693,13 +701,6 @@ width:-200px;
   width: 82%;
   margin:0px;
 }
-.article_menu .description p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 82%;
-  margin:0px;
-}
 .main-menu h2 {
   margin-top: 15px;
 }
@@ -708,13 +709,6 @@ width:-200px;
     text-overflow: initial;
     width: 100%;
     margin: 0px;
-  }
-  .article_menu .description p:hover{
-    overflow: initial;
-    text-overflow: initial;
-    width: 90%;
-    margin: 0px;
-    height: 35px;
   }
   .heart-solid:hover{
     opacity:1;
@@ -732,23 +726,29 @@ width:-200px;
   .slide_in{
     width:57px;
   }
-  .container_ok{
-    right:-600px;
+ .description .content h3, .description .content p{
+  width:800px;
+ }
+ .container_ok{
+  right:-110px;
+ }
+ .container_ok:hover{
+  right: 24px;
+  animation-name: encoche;
+ }
+ @keyframes encoche {
+  from{
+margin: left -20px;
+width:0px
   }
-  .container_ok:hover{
-    left:405px;
-   animation-duration: 2s;
-    animation-name: encoche;
+ to{
+margin:left 0px;
+width:-200px;
   }
-  @keyframes encoche {
-    from{
-  margin: left -20px;
-  width:0px
-    }
-   to{
-  margin:left 0px;
-  width:-200px;
-    }
+}
+.price p strong{
+  left:15px;
+}
 }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
@@ -779,7 +779,7 @@ width:-200px;
     .section-header h3{
       font-size: 1.3em;
     }
-    #serach p{ 
+    #search p{ 
     font-size: 1.1em;
     }
     h4{
@@ -827,9 +827,6 @@ width:-200px;
     .demitrait_dessous hr{
       width:45%;
     }
-    .article_menu .description h3, .article_menu .description p{
-      font-size: 19px;
-    }
     #search p, .main-menu .button{
       width: 40%;
       font-size: 1.2em;
@@ -837,23 +834,21 @@ width:-200px;
   .slide_in{
     width:62px;
   }
+  .price p strong{
+    left: 550px
+  }
   .container_ok{
-    right:-800px;
+    right:-60px;
   }
   .container_ok:hover{
-    left:650px;
-   animation-duration: 2s;
-    animation-name: encoche;
+    right:37px;
   }
-  @keyframes encoche {
-    from{
-  margin: left -20px;
-  width:0px
-    }
-   to{
-  margin:left 0px;
-  width:-200px;
-    }
+  .description .content p, .description .content h3{
+    width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: inherit;
+  }
   }
 
   
