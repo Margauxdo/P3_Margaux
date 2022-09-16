@@ -478,10 +478,11 @@ to {
     transform: rotate(359deg);
 }
 }
-.container_ok:active{
+.description .valid:active{
   animation-name: encoche;
   position: relative;
-  right: 28px;
+  display: block;
+  bottom: 9px;
 }
 @keyframes encoche {
   from{
@@ -724,10 +725,11 @@ width:0px;
   .slide_in{
     width:57px;
   }
- .container_ok:hover{
+ .description .valid:hover{
   animation-name: encoche;
   position: relative;
-  right: 135px;
+  display: block;
+  bottom: 9px;
  }
  @keyframes encoche {
   from{
