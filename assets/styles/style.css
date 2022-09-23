@@ -18,8 +18,14 @@ header .heart{
   top: 10px;
   background-color: #f7f7f7;
 }
+.heart{
+  width:20%;
+}
 header{
   text-align: center;
+}
+.aside_title{
+  width:90%;
 }
 #logo{
   width:50%;
@@ -245,7 +251,7 @@ width:100%;
 }
 .main-menu h1{
 float: left;
-font-size: 1.5em;
+font-size: 1.4em;
 font-family: 'Shrikhand';
 padding-left: 10px;
 padding-left: 15px;
@@ -455,14 +461,6 @@ figcaption .bloc{
 figcaption .bloc p{
   width:100%;
 }
-.slide_in{
-  width: 60px;
-  height: 60px;
-  border-radius: 0px 10px 10px 0px;
-  color: white;
-  border: 0px solid;
-  background: #99E2D0;
-}
 .fa-check-circle{
   font-size: 20px;
 }
@@ -478,62 +476,61 @@ to {
     transform: rotate(359deg);
 }
 }
-.description .valid:active{
-  animation-name: encoche;
-  position: relative;
-  display: block;
-  bottom: 9px;
-}
-@keyframes encoche {
-  from{
-margin: left 300%;
-width:100px;
-  }
- to{
-margin:left 0%;
-width:0px;
-  }
-}
-.description{
+.description {
   background-color: white;
-    border: 1px solid #ccc;
-    width: 95%;
-    height: 60px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: #ccc 4px 4px 3px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  border: 1px solid #ccc;
+  max-width: 90%;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: #ccc 4px 4px 3px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
-.description .content h3, .description .content p{
+
+.content,
+.description .content h3,
+.description .content p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.description .content{
-  margin:0;
-  width:80%;
-}
-.description .valid{
-  width:5%;
-  display:flex;
-  position: relative;
-}
-.price{
-  top: 30px;
-  position: relative;
-}
-.container_ok{
-  position: relative;
-  margin-right: -110px;
-}
-.price p strong{
-  margin:0px;
+  margin: 0px 5px;
 }
 
+.content {
+  width: 80%;
+}
 
+.price {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.container_ok {
+  margin-right: -60px;
+  width: 60px;
+  transition-duration: .5s;
+}
+
+.description:active .container_ok {
+  margin-right: 0px;
+}
+
+.slide_in {
+  width: 65px;
+  height: 65px;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  border: 0px solid;
+  background: #99E2D0;
+}
+section h2{
+  padding-top: 20px;
+}
 
 
 @media screen and (min-width:768px) and (max-width:989px)
@@ -587,16 +584,11 @@ width:0px;
   width: 55%;
     margin: 0;
 }
-.container_ok{
-  position: relative;
-    margin-right: -165px;
+.description{
+  max-width: 95%;
 }
-.price p strong{
- margin: 50px;
-}
-.container_ok:active{
-  position: relative;
-  right: 100px;
+.price{
+  padding-left: 110px;
 }
 }
   
@@ -694,21 +686,9 @@ width:0px;
   width: 45%;
     margin: 0px;
 }
-.description h3{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin:0px;
-}
 .main-menu h2 {
   margin-top: 15px;
 }
-  .description h3:hover{
-    overflow: initial;
-    text-overflow: initial;
-    width: 100%;
-    margin: 0px;
-  }
   .heart-solid:hover{
     opacity:1;
     animation-name: coeur;
@@ -722,32 +702,16 @@ width:0px;
         margin-top:0%;
     }
   }
-  .slide_in{
-    width:57px;
+  .description:hover .container_ok {
+    margin-right: 0px;
   }
- .description .valid:hover{
-  animation-name: encoche;
-  position: relative;
-  display: block;
-  bottom: 9px;
- }
- @keyframes encoche {
-  from{
-margin: left -20px;
-width:0px
+  .description{
+    max-width: 98%;
   }
- to{
-margin:left 0px;
-width:-200px;
+  .price{
+    padding-left: 125px;
   }
-}
-.container_ok{
-  position: relative;
-  margin-right: -210px
-}
-.price p strong{
-  margin:65px;
-}
+
 }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
@@ -830,21 +794,9 @@ width:-200px;
       width: 40%;
       font-size: 1.2em;
     }
-  .slide_in{
-    width:62px;
-  }
-  .description .content p, .description .content h3{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: inherit;
-  }
-  .price p strong{
-    margin:120px;
-  }
-  .container_ok:active{
-    position: relative;
-    right: 150px;
-}
+    .price{
+      padding-left: 155px;
+    }
   }
 
   
