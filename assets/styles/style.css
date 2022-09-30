@@ -327,17 +327,7 @@ visibility: hidden;
   animation-name: jaime;
   animation-duration:4s;
 }
-@keyframes jaime {
-  0%{
-    margin-top:100%;
-  }
-  50%{
-      margin-top:20%;
-  }
-  100%{
-    margin-top: 0%;
-  }
-}
+
 .empty{
   display: flex;
   position: relative;
@@ -477,21 +467,20 @@ animation:spin 5s ease-in-out forwards;
 }
 .heart-solid:active{
   opacity:1;
-  animation-name: coeur;
-  animation-duration:4s;
+  animation: scale 3s alternate forwards;
 }
-@keyframes coeur {
-  0%{
-    margin-top:10%;
+
+  @keyframes scale {
+    0%{
+      transform:scaleY(0);
+    }
+    50%{
+      transform: scaleY(0.5);
+    }
+    100%{
+      transform: scaleY(1);
+    }
   }
-  50%{
-      margin-top:3%;
-  }
-  100%{
-    margin-top: 0%;
-  }
-  
-}
 figcaption .bloc{
   display: flex;
   width: 100%;
@@ -536,6 +525,7 @@ to {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0px 5px;
+  width:180px;
 }
 
 .content {
@@ -571,6 +561,15 @@ to {
 section h2{
   padding-top: 20px;
 }
+.entete{
+  display: flex;
+  width: 100%;
+}
+.entete i{
+  width: 15%;
+  margin-top: 25px;
+  margin-left: 10px;
+}
 
 
 @media screen and (min-width:768px) and (max-width:989px)
@@ -579,7 +578,10 @@ section h2{
     margin:0 auto;
   }
   #logo{
-    width:30%;
+    width:25%;
+  }
+  .entete a{
+    padding-right: 15%;
   }
   #search p{
     font-size: 1em;
@@ -627,11 +629,31 @@ section h2{
 .description{
   max-width: 95%;
 }
+.img-bandeau{
+  height: 40%;
+  max-height: 450px;
+  width: 100%;
+  object-position: center 20%;
+  object-fit: cover;
+}
 .price{
   padding-left: 110px;
 }
 #search .button, .main-menu .button{
   width:35%;
+}
+.content,
+.description .content h3,
+.description .content p {
+  width:600px;
+}
+.coeur{
+  padding-left: 50%;
+}
+.entete i{
+  width: 15%;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 }
 
@@ -647,7 +669,7 @@ section h2{
     height:100%;
   }
   #logo{
-    width: 18%;
+    width:35%;
     margin: 20px 0px 12px 0px;
   }
   #localisation .localisation{
@@ -730,19 +752,7 @@ section h2{
 .main-menu h2 {
   margin-top: 15px;
 }
-  .heart-solid:hover{
-    opacity:1;
-    animation-name: coeur;
-    animation-duration:1s;
-  }
-  @keyframes coeur {
-    from{
-      margin-top:3%;
-    }
-    to{
-        margin-top:0%;
-    }
-  }
+  
   .description:hover .container_ok {
     margin-right: 0px;
   }
@@ -750,12 +760,51 @@ section h2{
     max-width: 98%;
   }
   .price{
-    padding-left: 125px;
+    padding-left:0px;
   }
   #search .button, .main-menu .button{
     width:25%;
+    margin-top: 50px;
   }
-
+  .img-bandeau{
+    height: 20%;
+    max-height: 300px;
+    width: 100%;
+    object-position: center 20%;
+    object-fit: cover;
+  }
+  .recette{
+    display:flex;
+    width:100%;
+  }
+  .main-menu section{
+    width:30%;
+  }
+  .content:hover, .description .content h3:hover, .description .content p:hover{
+    width:145px;
+  }
+  .coeur{
+    padding-left: 60%;
+  }
+  .entete a{
+    margin-right: 30%;
+  }
+  .heart-solid:hover{
+    opacity:1;
+    animation: scale 3s alternate infinite;
+  }
+  
+    @keyframes scale {
+      0%{
+        transform:scaleY(0);
+      }
+      50%{
+        transform: scaleY(0.5);
+      }
+      100%{
+        transform: scaleY(2);
+      }
+    }
 }
   @media screen and (min-width:1025px) and (max-width:1450px)
   {
@@ -763,7 +812,7 @@ section h2{
       margin: auto;
     }
     #logo{
-      width: 25%;
+      width: 35%;
     }
     #localisation{
       padding: 30px 0px;
@@ -837,9 +886,10 @@ section h2{
     #search p, .main-menu .button{
       width: 40%;
       font-size: 1.2em;
+      margin-top: 80px;
     }
     .price{
-      padding-left: 155px;
+      padding-left:0px;
     }
     footer nav ul li{
       padding-top: 30px;
@@ -856,6 +906,34 @@ section h2{
     font-weight: 600;
     font-size: 1.2em;
     }
+    .img-bandeau{
+      height: 30%;
+    max-height: 350px;
+    width: 100%;
+    object-position: center 20%;
+    object-fit: cover;
+    }
+    .recette{
+      display:flex;
+      width:100%;
+    }
+    .main-menu section{
+      width:40%;
+    }
+    .main-menu{
+      border-radius: 0em 0em 0em 0em;
+    width: 90%;
+    box-shadow: #ccc 1px 1px 4px;
+    }
+    .content:hover, .description .content h3:hover, .description .content p:hover{
+      width:200px;
+    }
+   .coeur{
+    padding-left: 70%;
+   }
+   .entete a{
+    padding-right: 30%;
+   }
   }
 
   
