@@ -10,6 +10,12 @@ p, a, li, ol,h2,h3,h4,h5{
 h1{
   font-family: 'Shrikhand', cursive;
 }
+.aside_title h2{
+  font-family: 'Shrikhand', cursive;
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: none;
+}
 .container{
   margin:0 auto;
   z-index: 0;
@@ -54,6 +60,7 @@ header{
   font-family: 'Roboto';
   text-align: center;
   margin-top:10px;
+  text-transform: none;
 }
 .section-header h3{
   color: #6b6b6b;
@@ -84,7 +91,7 @@ width: 55%;
   box-shadow: #ccc 0px 5px 3px;
   background-image: linear-gradient(176deg, #eebce0f0 20%, #e573c5f0 );
 }
-#search a {
+.search a {
 text-decoration: none;
 }
 .section-header{
@@ -157,7 +164,7 @@ background-color: #9856dc1f;
   padding-top: 40px;
   padding-bottom: 80px;
 }
-#search p{
+.search p{
   font-size: 0.8em;
   font-weight: 500;
   padding: 13px 0px;
@@ -265,13 +272,12 @@ position: relative;
 bottom: 2.3em;
 background-color: #f4f4f4;
 }
-.main-menu h2{
+h2{
 padding-left: 20px;
 font-family: 'Roboto';
 font-weight: lighter;
 font-size: 1em;
 text-transform: uppercase;
-padding-bottom:0.5em;
 
 }
 .description .content h3{
@@ -285,10 +291,9 @@ padding-bottom:0.5em;
   font-size: 0.9em;
 }
 .demitrait_dessous{
-  width: 13%;
-  margin: 0px;
-  padding-top: 0.2em;
-  padding-bottom: 0.5em;
+  width: 16%;
+  margin: 0px 20px 0px 20px;
+  padding-bottom: 15px;
 }
 .demitrait_dessous hr{
   background: #99E2D0;
@@ -304,7 +309,7 @@ color:#9356DC;
 visibility: hidden;
 }
 .aside_title{
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -577,7 +582,7 @@ section h2{
   .entete a{
     padding-right: 15%;
   }
-  #search p{
+  .search p{
     font-size: 1em;
     width:30%;
   }
@@ -618,7 +623,7 @@ section h2{
   margin-bottom: 15px;
 }
 .demitrait_dessous hr{
-  width: 55%;
+  width: 30%;
     margin: 0;
 }
 .description{
@@ -634,7 +639,7 @@ section h2{
 .price{
   padding-left: 110px;
 }
-#search .button, .main-menu .button{
+.search .button, .main-menu .button{
   width:35%;
 }
 .coeur{
@@ -677,10 +682,10 @@ section h2{
   .section-header h3{
     font-size: 1.2em;
   }
-  #search p{
+  .search p{
     font-size: 1em;
   }
-  #search p, .main-menu .button{
+  .search p, .main-menu .button{
     width:25%;
   }
   #container-etape ol{
@@ -755,7 +760,7 @@ section h2{
   .price{
     padding-left:0px;
   }
-  #search .button, .main-menu .button{
+  .search .button, .main-menu .button{
     width:25%;
     margin-top: 50px;
   }
@@ -826,7 +831,7 @@ section h2{
     .section-header h3{
       font-size: 1.3em;
     }
-    #search p{ 
+    .search p{ 
     font-size: 1.1em;
     }
     h4{
