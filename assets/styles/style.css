@@ -440,6 +440,9 @@ animation:spin 5s ease-in-out forwards;
   color: white;
   text-decoration: none;
 }
+.aside_title .heart-regular{
+  margin-right: 0px;
+}
 .heart-regular{
   width:25px;
   margin-right: 1px;
