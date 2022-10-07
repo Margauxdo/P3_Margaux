@@ -332,7 +332,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 animation:spin 3s forwards ;
--webklit-animation:spin 3s forwards;
 z-index: -2;
 }
 .spin{
@@ -351,7 +350,6 @@ text-indent: -9999em;
 border-top:10px solid #99E2D0;
 border-bottom:10px solid #99E2D0;
 animation:spin 5s ease-in-out forwards;
--webklit-animation:spin 5s ease-in-out forwards;
 }
 @keyframes spin{
 0%{
@@ -444,6 +442,7 @@ animation:spin 5s ease-in-out forwards;
 }
 .heart-regular{
   width:25px;
+  margin-right: 1px;
 }
 .heart-solid{
   width: 25px;
