@@ -705,7 +705,7 @@ section h2{
     bottom: 14.5em;
     left: 3.8em;
     font-size: 0.9em;
-    width:5em;
+    width:35%;
   }
   footer ul{
     display:flex;
@@ -812,6 +812,9 @@ section h2{
     }
     #localisation{
       padding: 30px 0px;
+    }
+    .new{
+      width:30%;
     }
     .fa-map-marker{
       font-size: 20px;
