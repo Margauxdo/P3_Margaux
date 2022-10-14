@@ -36,7 +36,7 @@ header{
 }
 #logo{
   width:50%;
-  margin: 20px 20px 8px 0px;
+  margin: 20px 0px 8px 0px;
 }
 #localisation{
   background-color: #f0f0f0;
@@ -128,7 +128,7 @@ background-color: #9856dc1f;
   color: #888282;
   float: left;
 }
-#container-etape li i:hover{
+#container-etape li:hover i{
   color:#9356DC
 }
 #container-etape li a{
@@ -450,6 +450,7 @@ animation:spin 5s ease-in-out forwards;
 .heart-regular{
   width:25px;
   margin-right: 1px;
+  padding:0.8px;
 }
 .heart-solid{
   width: 25px;
@@ -460,18 +461,18 @@ animation:spin 5s ease-in-out forwards;
 .heart-solid:hover{
   width:25px;
   opacity:1;
-  animation: scale 1s ease-in-out;
+  animation: scale 300ms ease-in-out 150ms;
 }
 
   @keyframes scale {
     0%{
-      transform:scaleY(0);
+      transform: scale(1);
     }
     50%{
-      transform: scaleY(0.5);
+      transform: scale(1.5);
     }
     100%{
-      transform: scaleY(1);
+      transform: scale(1.5);
     }
   }
 figcaption .bloc{
@@ -486,16 +487,16 @@ figcaption .bloc p{
 .fa-check-circle{
   font-size: 20px;
 }
-.fa-check-circle:hover{
+.description:hover .fa-check-circle{
   font-size: 20px;
-  animation:rotation 1s ease-in forwards;
+  animation:rotation 3s ease-in forwards;
 }
 @keyframes rotation {
   from {
-    transform: rotate(10deg);
+    transform: rotate(0deg);
 }
 to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
 }
 }
 .description {
