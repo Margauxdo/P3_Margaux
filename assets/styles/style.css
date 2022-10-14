@@ -13,7 +13,7 @@ h1{
 .aside_title h2{
   font-family: 'Shrikhand', cursive;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: none;
 }
 .container{
@@ -36,7 +36,7 @@ header{
 }
 #logo{
   width:50%;
-  margin: 20px 0px 8px 0px;
+  margin: 20px 20px 8px 0px;
 }
 #localisation{
   background-color: #f0f0f0;
@@ -196,7 +196,7 @@ background-color: #9856dc1f;
   padding: 5px;
   position: relative;
   bottom: 16.5em;
-  left: 7.5em;
+  left: 8.2em;
   border-radius: 0.2em;
   z-index: 0;
 }
@@ -488,11 +488,11 @@ figcaption .bloc p{
 }
 .fa-check-circle:hover{
   font-size: 20px;
-  animation:rotation 3s ease-in forwards;
+  animation:rotation 1s ease-in forwards;
 }
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(10deg);
 }
 to {
     transform: rotate(359deg);
@@ -568,6 +568,10 @@ section h2{
   position: relative;
   left: -26px;
 }
+.img-bandeau{
+  height: 210px;
+    object-fit: cover;
+}
 
 
 @media screen and (min-width:768px) and (max-width:989px)
@@ -577,7 +581,7 @@ section h2{
     z-index: 0;
   }
   #logo{
-    width:25%;
+    width:30%;
   }
   .entete a{
     padding-right: 15%;
@@ -601,7 +605,7 @@ section h2{
   }
   .new{
     bottom: 26em;
-    left: 19em;
+    left: 20em;
     font-weight: 800;
     width:15%;
     font-size: 0.9em;
@@ -630,8 +634,7 @@ section h2{
   max-width: 95%;
 }
 .img-bandeau{
-  height: 40%;
-  max-height: 450px;
+  max-height: 480px;
   width: 100%;
   object-position: center 20%;
   object-fit: cover;
@@ -703,9 +706,9 @@ section h2{
   }
   .new{
     bottom: 14.5em;
-    left: 3.8em;
+    left: 4.5em;
     font-size: 0.9em;
-    width:35%;
+    width:33%;
   }
   footer ul{
     display:flex;
@@ -765,8 +768,7 @@ section h2{
     margin-top: 50px;
   }
   .img-bandeau{
-    height: 20%;
-    max-height: 300px;
+    max-height: 380px;
     width: 100%;
     object-position: center 20%;
     object-fit: cover;
@@ -815,6 +817,7 @@ section h2{
     }
     .new{
       width:30%;
+      left:5.4em;
     }
     .fa-map-marker{
       font-size: 20px;
@@ -906,8 +909,7 @@ section h2{
     font-size: 1.2em;
     }
     .img-bandeau{
-      height: 30%;
-    max-height: 350px;
+    max-height:330px;
     width: 100%;
     object-position: center 20%;
     object-fit: cover;
@@ -929,7 +931,6 @@ section h2{
    }
    .heart-solid{
     right: 0px;
-    bottom: 1px
    }
    .entete .return{
     margin-left:0px;
